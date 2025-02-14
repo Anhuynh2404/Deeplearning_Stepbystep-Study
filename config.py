@@ -107,7 +107,7 @@ def config_chapter1(branch='main'):
         print('Installing torchviz...')
         subprocess.run([sys.executable, '-m', 'pip', 'install', 'torchviz'])
         print('Downloading files from GitHub repo to Colab...')
-        download_to_colab(1, branmainch)
+        download_to_colab(1, branch)
         print('Creating folders...')
         folders = ['data_preparation', 'model_configuration', 'model_training']
 
