@@ -58,3 +58,7 @@ except ModuleNotFoundError:
     IS_COLAB = False
 
 IS_LOCAL = (not IS_BINDER) and (not IS_COLAB)
+
+
+def download_to_colab(chapter, branch='main'):    
+    base_url = 'https://raw.githubusercontent.com/anhuynh2404/Deeplearning_Stepbystep-Study/{}/'.format(branch)
